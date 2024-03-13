@@ -34,7 +34,7 @@ cartRouter.post('/:cid/:pid', async (req, res) => {
 
         if (indice != -1) {
             
-            cart.products[indice].quantity = quantity //
+            cart.products[indice].quantity = quantity 
         } else {
             cart.products.push({ id_prod: productId, quantity: quantity })
         }
